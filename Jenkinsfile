@@ -12,5 +12,8 @@ pipeline {
             ''' 
       }
     }
+    stage('Build') {
+      sh 'mvn clean package'
+    }
   }
 }

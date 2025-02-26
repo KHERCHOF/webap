@@ -13,7 +13,7 @@ pipeline {
       }
     }
     stage('Build') {
-      steps {  // <-- Ajout du bloc 'steps'
+      steps { 
         sh 'mvn clean package'
       }
     }
